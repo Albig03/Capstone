@@ -2,3 +2,6 @@ Theres three main files as of now. Audio, sync, and combine. Audio is a script t
 Sync is a script that takes the TTS and the vocals of the original to synchronize the two so the TTS speaks at the same flow and timing of the singer.
 **Issue with this is we need an external software to take the original song and split the vocals from the instrumental.
 Combine is a script that simply takes the synced TTS and combines it with the instrumental of the original song.
+
+One attempted fix is training a model to sound like a certain celebrity and then having this celebrity sing the target language. This should fix the problem of splitting vocals/instrumentals.
+Another attempted fix is scrapping the current TTS model and finding one that already sings lyrics in a different language of course. This might still pose problems with sounding like the artist. 
