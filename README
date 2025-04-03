@@ -1,0 +1,4 @@
+Theres three main files as of now. Audio, sync, and combine. Audio is a script that takes the ID of a youtube video that has captions and translates the text, afterwards it creates a TTS file. 
+Sync is a script that takes the TTS and the vocals of the original to synchronize the two so the TTS speaks at the same flow and timing of the singer.
+**Issue with this is we need an external software to take the original song and split the vocals from the instrumental.
+Combine is a script that simply takes the synced TTS and combines it with the instrumental of the original song.
