@@ -1,7 +1,7 @@
-Theres three main files as of now. Audio, sync, and combine. Audio is a script that takes the ID of a youtube video that has captions and translates the text, afterwards it creates a TTS file. 
-Sync is a script that takes the TTS and the vocals of the original to synchronize the two so the TTS speaks at the same flow and timing of the singer.
-**Issue with this is we need an external software to take the original song and split the vocals from the instrumental.
-Combine is a script that simply takes the synced TTS and combines it with the instrumental of the original song.
+All files apart from FINAL.py are predecessors and have all been combined into one file, FINAL.py. 
+This project takes a song from Youtube and extracts its transcript. This transcript is then translated and converted to an audio file.
+The user also uploads an mp3 of their desired song that will be used to separate the vocals from the instrumentals using the demucs model. 
+The audio file is synchronized with the vocals of the original song and then recombined after with the original instrumental. 
 
-One attempted fix is training a model to sound like a certain celebrity and then having this celebrity sing the target language. This should fix the problem of splitting vocals/instrumentals.
-Another attempted fix is scrapping the current TTS model and finding one that already sings lyrics in a different language of course. This might still pose problems with sounding like the artist. 
+Running this file is as simple as running FINAL.py and following prompts.
+**Packages such as numpy, demucs, soundfile, librosa, etc will be necessary. 
